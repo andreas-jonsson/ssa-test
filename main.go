@@ -1,44 +1,33 @@
 package main
 
 import (
-	"fmt"
-	"go/ast"
-	"go/importer"
-	"go/parser"
-	"go/token"
-	"go/types"
+	"log"
 	"os"
 
+	"github.com/andreas-jonsson/ssa-test/packages"
 	"github.com/andreas-jonsson/ssa-test/ssa"
 	"github.com/andreas-jonsson/ssa-test/ssa/ssautil"
 )
 
 func main() {
-	// Parse the source files.
-	fset := token.NewFileSet()
-	f, err := parser.ParseFile(fset, "main.go", nil, parser.ParseComments)
+	// Load, parse, and type-check the whole program.
+	cfg := packages.Config{Mode: packages.LoadAllSyntax}
+	initial, err := packages.Load(&cfg, "github.com/andreas-jonsson/ssa-test")
 	if err != nil {
-		fmt.Print(err) // parse error
-		return
-	}
-	files := []*ast.File{f}
-
-	// Create the type-checker's package.
-	pkg := types.NewPackage("hello", "")
-
-	// Type-check the package, load dependencies.
-	// Create and build the SSA program.
-	hello, _, err := ssautil.BuildPackage(
-		&types.Config{Importer: importer.Default()}, fset, pkg, files, ssa.SanityCheckFunctions)
-	if err != nil {
-		fmt.Print(err) // type error in some package
-		return
+		log.Fatal(err)
 	}
 
-	// Print out the package.
-	hello.WriteTo(os.Stdout)
+	// Create SSA packages for well-typed packages and their dependencies.
+	prog, _ := ssautil.AllPackages(initial, ssa.SanityCheckFunctions)
 
-	// Print out the package-level functions.
-	hello.Func("init").WriteTo(os.Stdout)
-	hello.Func("main").WriteTo(os.Stdout)
+	// Build SSA code for the whole program.
+	prog.Build()
+
+	for _, pkg := range prog.AllPackages() {
+		for _, m := range pkg.Members {
+			if f, ok := m.(*ssa.Function); ok {
+				f.WriteTo(os.Stdout)
+			}
+		}
+	}
 }
