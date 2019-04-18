@@ -14,7 +14,7 @@ import (
 	"sync"
 	"unsafe"
 
-	"andreasjonsson.se/ssa-test/ssa"
+	"github.com/andreas-jonsson/ssa-test/ssa"
 )
 
 // If the target program panics, the interpreter panics with this type.

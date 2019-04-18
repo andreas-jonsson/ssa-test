@@ -12,9 +12,9 @@ import (
 	"sort"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/loader"
-	"andreasjonsson.se/ssa-test/ssa"
-	"andreasjonsson.se/ssa-test/ssa/ssautil"
+	"github.com/andreas-jonsson/ssa-test/loader"
+	"github.com/andreas-jonsson/ssa-test/ssa"
+	"github.com/andreas-jonsson/ssa-test/ssa/ssautil"
 )
 
 func create(t *testing.T, content string) *ssa.Package {

@@ -18,10 +18,10 @@ import (
 	"testing"
 	"time"
 
-	"andreasjonsson.se/ssa-test/loader"
-	"andreasjonsson.se/ssa-test/ssa"
-	"andreasjonsson.se/ssa-test/ssa/interp"
-	"andreasjonsson.se/ssa-test/ssa/ssautil"
+	"github.com/andreas-jonsson/ssa-test/loader"
+	"github.com/andreas-jonsson/ssa-test/ssa"
+	"github.com/andreas-jonsson/ssa-test/ssa/interp"
+	"github.com/andreas-jonsson/ssa-test/ssa/ssautil"
 )
 
 // Each line contains a space-separated list of $GOROOT/test/

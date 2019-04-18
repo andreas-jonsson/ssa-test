@@ -11,15 +11,15 @@ import (
 	"go/token"
 	"go/types"
 
-	"andreasjonsson.se/ssa-test/loader"
-	"andreasjonsson.se/ssa-test/packages"
-	"andreasjonsson.se/ssa-test/ssa"
+	"github.com/andreas-jonsson/ssa-test/loader"
+	"github.com/andreas-jonsson/ssa-test/packages"
+	"github.com/andreas-jonsson/ssa-test/ssa"
 )
 
 // Packages creates an SSA program for a set of packages.
 //
 // The packages must have been loaded from source syntax using the
-// andreasjonsson.se/ssa-test/packages.Load function in LoadSyntax or
+// github.com/andreas-jonsson/ssa-test/packages.Load function in LoadSyntax or
 // LoadAllSyntax mode.
 //
 // Packages creates an SSA package for each well-typed package in the
@@ -42,7 +42,7 @@ func Packages(initial []*packages.Package, mode ssa.BuilderMode) (*ssa.Program, 
 // their dependencies.
 //
 // The packages must have been loaded from source syntax using the
-// andreasjonsson.se/ssa-test/packages.Load function in LoadAllSyntax mode.
+// github.com/andreas-jonsson/ssa-test/packages.Load function in LoadAllSyntax mode.
 //
 // AllPackages creates an SSA package for each well-typed package in the
 // initial list, plus all their dependencies. The resulting list of
@@ -101,7 +101,7 @@ func doPackages(initial []*packages.Package, mode ssa.BuilderMode, deps bool) (*
 //
 // The mode parameter controls diagnostics and checking during SSA construction.
 //
-// Deprecated: use andreasjonsson.se/ssa-test/packages and the Packages
+// Deprecated: use github.com/andreas-jonsson/ssa-test/packages and the Packages
 // function instead; see ssa.ExampleLoadPackages.
 //
 func CreateProgram(lprog *loader.Program, mode ssa.BuilderMode) *ssa.Program {

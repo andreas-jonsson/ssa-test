@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	"andreasjonsson.se/ssa-test/buildutil"
-	"andreasjonsson.se/ssa-test/loader"
-	"andreasjonsson.se/ssa-test/ssa"
-	"andreasjonsson.se/ssa-test/ssa/ssautil"
+	"github.com/andreas-jonsson/ssa-test/buildutil"
+	"github.com/andreas-jonsson/ssa-test/loader"
+	"github.com/andreas-jonsson/ssa-test/ssa"
+	"github.com/andreas-jonsson/ssa-test/ssa/ssautil"
 )
 
 // Skip the set of packages that transitively depend on

@@ -17,7 +17,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"andreasjonsson.se/ssa-test/packages/fastwalk"
+	"github.com/andreas-jonsson/ssa-test/packages/fastwalk"
 )
 
 // Options controls the behavior of a Walk call.

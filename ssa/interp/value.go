@@ -43,8 +43,8 @@ import (
 	"sync"
 	"unsafe"
 
-	"andreasjonsson.se/ssa-test/ssa"
-	"andreasjonsson.se/ssa-test/types/typeutil"
+	"github.com/andreas-jonsson/ssa-test/ssa"
+	"github.com/andreas-jonsson/ssa-test/types/typeutil"
 )
 
 type value interface{}

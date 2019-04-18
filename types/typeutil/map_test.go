@@ -13,7 +13,7 @@ import (
 	"go/types"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/types/typeutil"
+	"github.com/andreas-jonsson/ssa-test/types/typeutil"
 )
 
 var (

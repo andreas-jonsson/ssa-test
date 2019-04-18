@@ -15,7 +15,7 @@ import (
 	"reflect"
 	"sort"
 
-	"andreasjonsson.se/ssa-test/types/typeutil"
+	"github.com/andreas-jonsson/ssa-test/types/typeutil"
 )
 
 // relName returns the name of v relative to i.

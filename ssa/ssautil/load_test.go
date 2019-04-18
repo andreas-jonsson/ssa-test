@@ -15,8 +15,8 @@ import (
 	"strings"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/packages"
-	"andreasjonsson.se/ssa-test/ssa/ssautil"
+	"github.com/andreas-jonsson/ssa-test/packages"
+	"github.com/andreas-jonsson/ssa-test/ssa/ssautil"
 )
 
 const hello = `package main

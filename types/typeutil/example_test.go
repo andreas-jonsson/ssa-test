@@ -12,7 +12,7 @@ import (
 	"go/types"
 	"sort"
 
-	"andreasjonsson.se/ssa-test/types/typeutil"
+	"github.com/andreas-jonsson/ssa-test/types/typeutil"
 )
 
 func ExampleMap() {

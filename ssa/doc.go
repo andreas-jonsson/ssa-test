@@ -24,7 +24,7 @@
 // ssautil.Switches() for an example.
 //
 // The simplest way to create the SSA representation of a package is
-// to load typed syntax trees using andreasjonsson.se/ssa-test/packages, then
+// to load typed syntax trees using github.com/andreas-jonsson/ssa-test/packages, then
 // invoke the ssautil.Packages helper function. See ExampleLoadPackages
 // and ExampleWholeProgram for examples.
 // The resulting ssa.Program contains all the packages and their
@@ -122,4 +122,4 @@
 // domains of source locations, ast.Nodes, types.Objects,
 // ssa.Values/Instructions.
 //
-package ssa // import "andreasjonsson.se/ssa-test/ssa"
+package ssa // import "github.com/andreas-jonsson/ssa-test/ssa"

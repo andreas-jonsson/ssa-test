@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/buildutil"
-	"andreasjonsson.se/ssa-test/loader"
-	"andreasjonsson.se/ssa-test/types/objectpath"
+	"github.com/andreas-jonsson/ssa-test/buildutil"
+	"github.com/andreas-jonsson/ssa-test/loader"
+	"github.com/andreas-jonsson/ssa-test/types/objectpath"
 )
 
 func TestPaths(t *testing.T) {

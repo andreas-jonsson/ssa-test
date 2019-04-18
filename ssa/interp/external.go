@@ -17,7 +17,7 @@ import (
 	"time"
 	"unsafe"
 
-	"andreasjonsson.se/ssa-test/ssa"
+	"github.com/andreas-jonsson/ssa-test/ssa"
 )
 
 type externalFn func(fr *frame, args []value) value

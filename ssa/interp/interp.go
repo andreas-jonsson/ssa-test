@@ -44,7 +44,7 @@
 //
 // * os.Exit is implemented using panic, causing deferred functions to
 // run.
-package interp // import "andreasjonsson.se/ssa-test/ssa/interp"
+package interp // import "github.com/andreas-jonsson/ssa-test/ssa/interp"
 
 import (
 	"fmt"
@@ -55,7 +55,7 @@ import (
 	"runtime"
 	"sync/atomic"
 
-	"andreasjonsson.se/ssa-test/ssa"
+	"github.com/andreas-jonsson/ssa-test/ssa"
 )
 
 type continuation int

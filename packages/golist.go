@@ -21,9 +21,9 @@ import (
 	"sync"
 	"time"
 
-	"andreasjonsson.se/ssa-test/packages/gopathwalk"
-	"andreasjonsson.se/ssa-test/packages/packagesdriver"
-	"andreasjonsson.se/ssa-test/packages/semver"
+	"github.com/andreas-jonsson/ssa-test/packages/gopathwalk"
+	"github.com/andreas-jonsson/ssa-test/packages/packagesdriver"
+	"github.com/andreas-jonsson/ssa-test/packages/semver"
 )
 
 // debug controls verbose logging.

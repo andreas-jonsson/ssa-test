@@ -18,7 +18,7 @@ import (
 	"sync"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/packages/fastwalk"
+	"github.com/andreas-jonsson/ssa-test/packages/fastwalk"
 )
 
 func formatFileModes(m map[string]os.FileMode) string {

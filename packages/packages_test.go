@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/packages"
-	"andreasjonsson.se/ssa-test/packages/packagestest"
+	"github.com/andreas-jonsson/ssa-test/packages"
+	"github.com/andreas-jonsson/ssa-test/packages/packagestest"
 )
 
 // TODO(matloob): remove this once Go 1.12 is released as we will end support

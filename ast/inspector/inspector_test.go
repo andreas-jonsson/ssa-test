@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/ast/inspector"
+	"github.com/andreas-jonsson/ssa-test/ast/inspector"
 )
 
 var netFiles []*ast.File

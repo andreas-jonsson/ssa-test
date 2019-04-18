@@ -7,7 +7,7 @@
 //
 // All I/O is done via the build.Context file system interface, which must
 // be concurrency-safe.
-package buildutil // import "andreasjonsson.se/ssa-test/buildutil"
+package buildutil // import "github.com/andreas-jonsson/ssa-test/buildutil"
 
 import (
 	"go/build"

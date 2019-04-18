@@ -17,9 +17,9 @@ import (
 	"strings"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/loader"
-	"andreasjonsson.se/ssa-test/ssa"
-	"andreasjonsson.se/ssa-test/ssa/ssautil"
+	"github.com/andreas-jonsson/ssa-test/loader"
+	"github.com/andreas-jonsson/ssa-test/ssa"
+	"github.com/andreas-jonsson/ssa-test/ssa/ssautil"
 )
 
 func isEmpty(f *ssa.Function) bool { return f.Blocks == nil }

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/buildutil"
+	"github.com/andreas-jonsson/ssa-test/buildutil"
 )
 
 func TestParseOverlayArchive(t *testing.T) {

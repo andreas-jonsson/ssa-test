@@ -14,9 +14,9 @@ import (
 	"log"
 	"os"
 
-	"andreasjonsson.se/ssa-test/packages"
-	"andreasjonsson.se/ssa-test/ssa"
-	"andreasjonsson.se/ssa-test/ssa/ssautil"
+	"github.com/andreas-jonsson/ssa-test/packages"
+	"github.com/andreas-jonsson/ssa-test/ssa"
+	"github.com/andreas-jonsson/ssa-test/ssa/ssautil"
 )
 
 const hello = `
@@ -34,7 +34,7 @@ func main() {
 // This program demonstrates how to run the SSA builder on a single
 // package of one or more already-parsed files.  Its dependencies are
 // loaded from compiler export data.  This is what you'd typically use
-// for a compiler; it does not depend on andreasjonsson.se/ssa-test/loader.
+// for a compiler; it does not depend on github.com/andreas-jonsson/ssa-test/loader.
 //
 // It shows the printed representation of packages, functions, and
 // instructions.  Within the function listing, the name of each

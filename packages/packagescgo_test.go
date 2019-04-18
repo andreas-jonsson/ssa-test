@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/packages"
+	"github.com/andreas-jonsson/ssa-test/packages"
 )
 
 func TestLoadImportsC(t *testing.T) {

@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"andreasjonsson.se/ssa-test/ast/astutil"
+	"github.com/andreas-jonsson/ssa-test/ast/astutil"
 )
 
 var ignoreVendor build.ImportMode

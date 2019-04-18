@@ -16,7 +16,7 @@ import (
 	"sort"
 	"strings"
 
-	"andreasjonsson.se/ssa-test/loader"
+	"github.com/andreas-jonsson/ssa-test/loader"
 )
 
 func printProgram(prog *loader.Program) {

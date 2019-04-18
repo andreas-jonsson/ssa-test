@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package ssautil // import "andreasjonsson.se/ssa-test/ssa/ssautil"
+package ssautil // import "github.com/andreas-jonsson/ssa-test/ssa/ssautil"
 
-import "andreasjonsson.se/ssa-test/ssa"
+import "github.com/andreas-jonsson/ssa-test/ssa"
 
 // This file defines utilities for visiting the SSA representation of
 // a Program.

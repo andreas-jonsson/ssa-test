@@ -842,12 +842,12 @@ import (
 type I int
 `)
 	// The AddImport order here matters.
-	AddImport(fset, file, "andreasjonsson.se/ssa-test/ast/astutil")
+	AddImport(fset, file, "github.com/andreas-jonsson/ssa-test/ast/astutil")
 	AddImport(fset, file, "os")
 	want := `package main
 
 import (
-	"andreasjonsson.se/ssa-test/ast/astutil"
+	"github.com/andreas-jonsson/ssa-test/ast/astutil"
 	"os"
 )
 

@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"andreasjonsson.se/ssa-test/packages"
+	"github.com/andreas-jonsson/ssa-test/packages"
 )
 
 // This test loads the metadata for the standard library,

@@ -17,7 +17,7 @@ import (
 	"reflect"
 	"unsafe"
 
-	"andreasjonsson.se/ssa-test/ssa"
+	"github.com/andreas-jonsson/ssa-test/ssa"
 )
 
 type opaqueType struct {

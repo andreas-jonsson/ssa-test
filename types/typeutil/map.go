@@ -4,7 +4,7 @@
 
 // Package typeutil defines various utilities for types, such as Map,
 // a mapping from types.Type to interface{} values.
-package typeutil // import "andreasjonsson.se/ssa-test/types/typeutil"
+package typeutil // import "github.com/andreas-jonsson/ssa-test/types/typeutil"
 
 import (
 	"bytes"

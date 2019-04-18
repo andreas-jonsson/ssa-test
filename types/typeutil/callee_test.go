@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/types/typeutil"
+	"github.com/andreas-jonsson/ssa-test/types/typeutil"
 )
 
 func TestStaticCallee(t *testing.T) {

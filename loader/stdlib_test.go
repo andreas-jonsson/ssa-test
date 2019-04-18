@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
-	"andreasjonsson.se/ssa-test/buildutil"
-	"andreasjonsson.se/ssa-test/loader"
+	"github.com/andreas-jonsson/ssa-test/buildutil"
+	"github.com/andreas-jonsson/ssa-test/loader"
 )
 
 func TestStdlib(t *testing.T) {

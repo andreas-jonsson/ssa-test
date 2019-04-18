@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"andreasjonsson.se/ssa-test/packages"
+	"github.com/andreas-jonsson/ssa-test/packages"
 )
 
 // Example demonstrates how to load the packages specified on the

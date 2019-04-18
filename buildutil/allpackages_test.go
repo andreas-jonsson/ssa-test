@@ -15,8 +15,8 @@ import (
 	"strings"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/buildutil"
-	"andreasjonsson.se/ssa-test/packages/packagestest"
+	"github.com/andreas-jonsson/ssa-test/buildutil"
+	"github.com/andreas-jonsson/ssa-test/packages/packagestest"
 )
 
 func TestAllPackages(t *testing.T) {
@@ -25,7 +25,7 @@ func TestAllPackages(t *testing.T) {
 	}
 
 	exported := packagestest.Export(t, packagestest.GOPATH, []packagestest.Module{
-		{Name: "andreasjonsson.se/ssa-test/buildutil", Files: packagestest.MustCopyFileTree(".")}})
+		{Name: "github.com/andreas-jonsson/ssa-test/buildutil", Files: packagestest.MustCopyFileTree(".")}})
 	defer exported.Cleanup()
 
 	var gopath string
@@ -53,7 +53,7 @@ func TestAllPackages(t *testing.T) {
 		t.Errorf("Found only %d packages, want at least %d", len(all), wantAtLeast)
 	}
 
-	for _, want := range []string{"fmt", "crypto/sha256", "andreasjonsson.se/ssa-test/buildutil"} {
+	for _, want := range []string{"fmt", "crypto/sha256", "github.com/andreas-jonsson/ssa-test/buildutil"} {
 		if !set[want] {
 			t.Errorf("Package %q not found; got %s", want, all)
 		}

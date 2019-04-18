@@ -13,8 +13,8 @@ import (
 	"strings"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/buildutil"
-	"andreasjonsson.se/ssa-test/packages/packagestest"
+	"github.com/andreas-jonsson/ssa-test/buildutil"
+	"github.com/andreas-jonsson/ssa-test/packages/packagestest"
 )
 
 func TestContainingPackage(t *testing.T) {
@@ -23,7 +23,7 @@ func TestContainingPackage(t *testing.T) {
 	}
 
 	exported := packagestest.Export(t, packagestest.GOPATH, []packagestest.Module{
-		{Name: "andreasjonsson.se/ssa-test/buildutil", Files: packagestest.MustCopyFileTree(".")}})
+		{Name: "github.com/andreas-jonsson/ssa-test/buildutil", Files: packagestest.MustCopyFileTree(".")}})
 	defer exported.Cleanup()
 
 	goroot := runtime.GOROOT()
@@ -47,8 +47,8 @@ func TestContainingPackage(t *testing.T) {
 		{gopath, goroot + "/src/fmt/print.go", "fmt"},
 		{gopath, goroot + "/src/encoding/json/foo.go", "encoding/json"},
 		{gopath, goroot + "/src/encoding/missing/foo.go", "(not found)"},
-		{gopath, gopath + "/src/andreasjonsson.se/ssa-test/buildutil/util_test.go",
-			"andreasjonsson.se/ssa-test/buildutil"},
+		{gopath, gopath + "/src/github.com/andreas-jonsson/ssa-test/buildutil/util_test.go",
+			"github.com/andreas-jonsson/ssa-test/buildutil"},
 	}
 
 	if runtime.GOOS != "windows" && runtime.GOOS != "plan9" {
@@ -66,9 +66,9 @@ func TestContainingPackage(t *testing.T) {
 			t.Fatal(err)
 		}
 		tests = append(tests, []Test{
-			{gopath, tmp + "/src/andreasjonsson.se/ssa-test/buildutil/util_test.go", "andreasjonsson.se/ssa-test/buildutil"},
-			{tmp, gopath + "/src/andreasjonsson.se/ssa-test/buildutil/util_test.go", "andreasjonsson.se/ssa-test/buildutil"},
-			{tmp, tmp + "/src/andreasjonsson.se/ssa-test/buildutil/util_test.go", "andreasjonsson.se/ssa-test/buildutil"},
+			{gopath, tmp + "/src/github.com/andreas-jonsson/ssa-test/buildutil/util_test.go", "github.com/andreas-jonsson/ssa-test/buildutil"},
+			{tmp, gopath + "/src/github.com/andreas-jonsson/ssa-test/buildutil/util_test.go", "github.com/andreas-jonsson/ssa-test/buildutil"},
+			{tmp, tmp + "/src/github.com/andreas-jonsson/ssa-test/buildutil/util_test.go", "github.com/andreas-jonsson/ssa-test/buildutil"},
 		}...)
 	}
 

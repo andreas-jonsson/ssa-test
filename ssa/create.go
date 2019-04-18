@@ -15,7 +15,7 @@ import (
 	"os"
 	"sync"
 
-	"andreasjonsson.se/ssa-test/types/typeutil"
+	"github.com/andreas-jonsson/ssa-test/types/typeutil"
 )
 
 // NewProgram returns a new SSA Program.

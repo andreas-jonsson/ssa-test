@@ -14,7 +14,7 @@ import (
 	"strconv"
 	"sync"
 
-	"andreasjonsson.se/ssa-test/buildutil"
+	"github.com/andreas-jonsson/ssa-test/buildutil"
 )
 
 // We use a counting semaphore to limit

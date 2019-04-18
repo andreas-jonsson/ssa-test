@@ -9,8 +9,8 @@ import (
 	"go/types"
 	"os"
 
-	"andreasjonsson.se/ssa-test/ssa"
-	"andreasjonsson.se/ssa-test/ssa/ssautil"
+	"github.com/andreas-jonsson/ssa-test/ssa"
+	"github.com/andreas-jonsson/ssa-test/ssa/ssautil"
 )
 
 func main() {

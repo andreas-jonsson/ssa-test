@@ -21,8 +21,8 @@ import (
 	"sync"
 	"testing"
 
-	"andreasjonsson.se/ssa-test/buildutil"
-	"andreasjonsson.se/ssa-test/loader"
+	"github.com/andreas-jonsson/ssa-test/buildutil"
+	"github.com/andreas-jonsson/ssa-test/loader"
 )
 
 // TestFromArgs checks that conf.FromArgs populates conf correctly.
